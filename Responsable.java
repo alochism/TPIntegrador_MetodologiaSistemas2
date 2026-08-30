@@ -1,9 +1,12 @@
 public class Responsable {
-    public String nombre;
-    public String area;
+    private final String nombre;
+    private final String area;
 
     public Responsable(String nombre, String area) {
         this.nombre = nombre;
         this.area = area;
     }
+
+    public String getNombre() { return nombre; }
+    public String getArea() { return area; }
 }
