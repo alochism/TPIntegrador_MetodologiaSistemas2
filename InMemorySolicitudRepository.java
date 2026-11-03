@@ -4,7 +4,12 @@ import java.util.Optional;
 
 public class InMemorySolicitudRepository implements SolicitudRepository {
     private final List<Solicitud> solicitudes = new ArrayList<>();
-    private int contadorId = 1; // muevo acá la generación de id (Move Method: es responsabilidad del repositorio, no del service)
+    private int contadorId = 1; // Move Method: la generación de id es responsabilidad del repositorio
+
+    @Override
+    public int generarNuevoId() {
+        return contadorId++;
+    }
 
     @Override
     public Solicitud guardar(Solicitud solicitud) {
@@ -20,9 +25,5 @@ public class InMemorySolicitudRepository implements SolicitudRepository {
     @Override
     public List<Solicitud> obtenerTodas() {
         return new ArrayList<>(solicitudes);
-    }
-
-    public int generarNuevoId() {
-        return contadorId++;
     }
 }
