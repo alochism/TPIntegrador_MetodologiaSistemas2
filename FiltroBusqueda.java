@@ -1,4 +1,4 @@
-// cualquier campo en null/vacío significa "no filtrar por este criterio"
+// Un criterio null no filtra; tipo vacío o en blanco tampoco filtra. Los demás tipos se comparan exactamente.
 public class FiltroBusqueda {
     private final String tipo;
     private final EstadoSolicitud estado;
