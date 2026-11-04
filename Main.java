@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        InMemorySolicitudRepository repositorio = new InMemorySolicitudRepository();
+        SolicitudRepository repositorio = new InMemorySolicitudRepository();
         SolicitudService service = new SolicitudService(repositorio);
         ReporteService reporteService = new ReporteService();
         ReportePresenter presenter = new ReportePresenter();
