@@ -78,6 +78,6 @@ El script compila con advertencias activadas, ejecuta las pruebas sin `-ea` y co
 
 La persistencia sigue siendo temporal. No se imponen transiciones de estado ni obligatoriedad de responsable para resolver, porque no son requisitos establecidos. Las entidades aún exponen setters y los reportes conservan referencias mutables; se deja documentado el límite sin ampliar el alcance.
 
-La consigna exige `etapa-diagnostico`, ausente en los tags locales revisados. También escribe `estadorefactorizado`, mientras que el proyecto usa `estado-refactorizado`; el equipo debe verificar la denominación al preparar la entrega. Esta revisión conserva los tags y el historial existentes.
+Los tags exigidos por la consigna quedaron creados: `etapa-diagnostico` apunta al commit bb6a17a, que documenta el diagnóstico y es posterior al código inicial, y `estadorefactorizado` apunta al commit de cierre de la entrega. Se eliminó el tag `estado-refactorizado` (con guion), porque no coincidía con la denominación de la consigna y apuntaba al mismo commit que `etapa-pruebas`.
 
 El informe previo de Matías describe una entrega individual y pruebas con assert. Para la entrega grupal corresponde integrar los aportes posteriores, actualizar esas referencias, completar las conclusiones personales y enlazar el video y el anexo de evidencias. El registro de esta asistencia se encuentra en [registro-ia.md](registro-ia.md); debe incorporarse con el intercambio relevante al anexo requerido por la cátedra.

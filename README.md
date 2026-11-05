@@ -69,12 +69,13 @@ La persistencia es en memoria y dura una ejecución. Se conservan los cambios de
 El repositorio conserva el historial de evolución del sistema mediante tags:
 
 - `estado-inicial`: versión original con problemas de diseño intencionales
+- `etapa-diagnostico`: diagnóstico documentado en docs/diagnostico-y-mejoras.md
 - `etapa-refactoring`: aplicación de SOLID, Clean Code y refactorings
 - `etapa-pruebas`: pruebas automatizadas con assert
-- `estado-refactorizado`: cierre del refactor validado
 - `etapa-docs`: checklist de code review
+- `estadorefactorizado`: versión final refactorizada y validada
 
-El tag `etapa-diagnostico` solicitado por la consigna no está presente en el historial local revisado. El diagnóstico se documenta ahora con referencias a la versión inicial, sin modificar los tags existentes.
+El diagnóstico se documentó después del código inicial (commit bb6a17a), por eso `etapa-diagnostico` apunta a ese commit y no a la versión inicial.
 
 ## Documentación de la revisión
 
